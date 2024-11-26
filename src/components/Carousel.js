@@ -1,30 +1,27 @@
 import React from "react";
 import Slider from "react-slick";
 import "../styles/Carousel.css"; // For custom styling
-import ParisImage from "../images/paris.png";
-import TokyoImage from "../images/tokyo.png";
-import SydneyImage from "../images/sydney.png";
-import DubaiImage from "../images/dubai.png";
+
 
 const Carousel = () => {
   const images = [
     {
-      src: ParisImage,
+      src: "/images/paris.png",
       alt: "Paris",
       caption: "Explore the beauty of Paris",
     },
     {
-      src: TokyoImage,
+      src: "/images/tokyo.png",
       alt: "Tokyo",
       caption: "Discover the charm of Tokyo",
     },
     {
-      src: SydneyImage,
+      src: "/images/sydney.png",
       alt: "Sydney",
       caption: "Experience the wonders of Sydney",
     },
     {
-      src: DubaiImage,
+      src: "/images/dubai.png",
       alt: "Dubai",
       caption: "Visit the luxurious Dubai",
     },

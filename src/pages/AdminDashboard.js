@@ -3,28 +3,25 @@ import Carousel from "../components/Carousel"
 import DestinationCard from "../components/DestinationCard";
 
 
-
-
-
 const Dashboard = () => {
 const destinations = [
     {
-      image: <img src="../images/paris.png"></img>,
+      image: "/images/paris.png",
       title: "Paris, France",
       description: "Discover the City of Lights and its romantic charm.",
     },
     {
-      image: <img src="paris.png"></img>,
+      image: "/images/tokyo.png",
       title: "Tokyo, Japan",
       description: "Immerse yourself in Tokyo's rich culture and cuisine.",
     },
     {
-      image: <img src="paris.png"></img>,
+      image: "/images/sydney.png",
       title: "Sydney, Australia",
       description: "Relax on the beaches or visit the Sydney Opera House.",
     },
     {
-      image: <img src="paris.png"></img>,
+      image: "/images/dubai.png",
       title: "Dubai, UAE",
       description: "Experience luxury and stunning skyscrapers in Dubai.",
     },
