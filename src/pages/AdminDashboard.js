@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 import Carousel from "../components/Carousel"
 import DestinationCard from "../components/DestinationCard";
 
@@ -31,7 +32,7 @@ const destinations = [
     alert("Explore feature coming soon!");
 };
 
-  return (
+  return (   
    
     <div style={styles.container}>
       {/* Welcome Section */}
