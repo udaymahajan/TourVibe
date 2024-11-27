@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Dashboard from "./pages/AdminDashboard";
 import SignIn from "./pages/Login";
 import SignUp from "./pages/Register";
+import Careers from "./pages/Careers";
 
 const BrowserRouter = dynamic(
   () => import('react-router-dom').then((mod) => mod.BrowserRouter),
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/" element={<Dashboard />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/careers" element={<Careers />} />
       </Routes>
     </BrowserRouter>
   );
