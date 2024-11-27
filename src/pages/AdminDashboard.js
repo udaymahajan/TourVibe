@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import Carousel from "../components/Carousel"
 import DestinationCard from "../components/DestinationCard";
+import { Link } from "react-router-dom"; // Add this import
 
 
 const Dashboard = () => {
@@ -28,10 +28,6 @@ const destinations = [
     },
   ];
 
-  const handleExplore = () => {
-    alert("Explore feature coming soon!");
-};
-
   return (   
    
     <div style={styles.container} className="container" >
@@ -41,9 +37,12 @@ const destinations = [
         <p style={styles.subheading}>
           Discover your next adventure with our curated destinations.
         </p>
-        <button style={styles.exploreButton} onClick={handleExplore}>
-          Explore Now
-        </button>
+        {/* Link to Explore page */}
+        <Link to="/explore">
+          <button style={styles.exploreButton}>
+            Explore Now
+          </button>
+        </Link>
       </div>
 
       <div style={styles.carouselSection}>

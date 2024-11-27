@@ -6,6 +6,7 @@ import Dashboard from "./pages/AdminDashboard";
 import SignIn from "./pages/Login";
 import SignUp from "./pages/Register";
 import Careers from "./pages/Careers";
+import Explore from "./pages/Explore";
 
 const BrowserRouter = dynamic(
   () => import('react-router-dom').then((mod) => mod.BrowserRouter),
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/explore" element={<Explore />} />
       </Routes>
     </BrowserRouter>
   );
