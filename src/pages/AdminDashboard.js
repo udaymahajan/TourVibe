@@ -34,7 +34,7 @@ const destinations = [
 
   return (   
    
-    <div style={styles.container}>
+    <div style={styles.container} className="container" >
       {/* Welcome Section */}
       <div style={styles.welcomeSection}>
         <h1 style={styles.heading}>Welcome to Tour Vibe!</h1>
@@ -71,11 +71,25 @@ const destinations = [
 
 const styles = {
 
-  container: {
-    fontFamily: "Arial, sans-serif",
-    padding: "20px",
-  },
+    
+
+    container: {
+        fontFamily: "Arial, sans-serif",
+        minHeight: "100vh", // Ensures the container covers at least the full viewport height
+        width: "100%", // Full width of the viewport
+        backgroundImage: "url('../images/cover-page.png')",
+        backgroundRepeat: "no-repeat", // Prevent tiling
+        backgroundSize: "cover", // Stretch to cover the full container
+        backgroundPosition: "center", // Center the image
+        overflow: "hidden", // Prevent scrolling
+        margin: "0", // Remove any margins
+        padding: "0", // Remove padding
+      },
+    
+
+      
   welcomeSection: {
+    paddingTop: "1px",
     textAlign: "center",
     marginBottom: "40px",
   },

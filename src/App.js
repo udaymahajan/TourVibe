@@ -4,8 +4,6 @@ import Navbar from "./components/Navbar";
 import Dashboard from "./pages/AdminDashboard";
 import SignIn from "./pages/Login";
 import SignUp from "./pages/Register";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 
 const App = () => {

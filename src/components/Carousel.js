@@ -55,12 +55,13 @@ const Carousel = () => {
 
 const styles = {
     container: { maxWidth: "800px", margin: "auto", padding: "20px" },
-    slide: { position: "relative", textAlign: "center" },
+    slide: { position: "relative", textAlign: "center", display: "flex", justifyContent: "center", },
     image: {
         width: "100%", // Makes the image fill the container's width
         height: "400px", // Set a fixed height for consistency
         objectFit: "cover", // Ensures the image fills the container proportionally
         borderRadius: "10px",
+        display: "block",
     },
     caption: {
       position: "absolute",
@@ -74,6 +75,7 @@ const styles = {
       fontSize: "18px",
       zIndex: 1, // Ensure caption is above the image
       whiteSpace: "nowrap", // Prevent text wrapping
+      maxWidth: "90%",
     },
   };
   
